@@ -42,10 +42,10 @@ This implementation is basically the same with [my previous implementation](http
 
 The main three layers are the Adapters, Use cases, and Entities.
 ### Adapters
-The Domain layer contains the core business logic of the application. It defines the data structures and operations that represent the problem domain, as well as interfaces and services that define the contract between the domain and the other layers. This layer should be independent of any particular framework or delivery mechanism.
+This layer provides an abstraction layer between the internal parts of the application and external services, such as a database, a cache, or an API. It provides a way to interact with the external service, without the internal parts of the application being directly aware of the implementation details. The adapters translate the data into a format that can be understood by the use cases and vice versa.
 
 ### Use cases
-This layer provides an abstraction layer between the internal parts of the application and external services, such as a database, a cache, or an API. It provides a way to interact with the external service, without the internal parts of the application being directly aware of the implementation details. The adapters translate the data into a format that can be understood by the use cases and vice versa.
+This layer contains the business logic and rules of the application. It contains the use cases which are specific actions that the application can perform. The use cases are the main way that the application interacts with the data storage through the repository interfaces. They represent the actions that the application can perform, like creating, reading, updating, or deleting data.
 
 ### Entities
 This layer contains the structs or objects that represent the internal data models used in the application. The entities define the data structure and the business rules for the application. The entities should be independent of the other layers and should not contain any external dependencies. The entities are also independent of data access code, so it could be reused in different type of data storage.
