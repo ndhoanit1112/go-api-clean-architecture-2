@@ -4,7 +4,6 @@ import (
 	"errors"
 
 	"github.com/ndhoanit1112/go-api-clean-architecture-2/internal/entities"
-	"gorm.io/datatypes"
 )
 
 // Interface provided by Business layer
@@ -38,7 +37,7 @@ func (service *productService) CreateProduct(data *entities.Product) error {
 	}
 
 	// Process data following business rules...
-	data.Config = datatypes.JSON([]byte(`{"deploy_version": "v4"}`))
+	data.Config = map[string]interface{}{"deploy_version": "v4"}
 
 	// Delegate the work of Inserting product record into database to the storage layer
 	// This kind of work is called "detail" in the context of Clean Architecture
