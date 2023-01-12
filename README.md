@@ -34,7 +34,7 @@ This repository contains an implementation of a Go application following Clean A
 ```
 
 I tend to follow the [Go standard project layout](https://github.com/golang-standards/project-layout), and try to implement the core idea of Clean architecture. The goal is to make the application's core business logic independent of any particular framework, database, or delivery mechanism.
-This implementation is basically the same with [my previous implementation](https://github.com/ndhoanit1112/go-api-clean-architecture). I just try to change the name of application layers so that it closely relects the [Clean Architecture by Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). The Dependency rule is completely the same.
+This implementation is basically the same with [my previous implementation](https://github.com/ndhoanit1112/go-api-clean-architecture). I just try to change the name of application layers so that they closely reflect the [Clean Architecture by Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). The Dependency rule is completely the same.
 
 ![Clean Architecture by Uncle Bob](https://github.com/mattia-battiston/clean-architecture-example/blob/master/docs/images/clean-architecture-diagram-2.png?raw=true)
 
