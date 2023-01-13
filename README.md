@@ -18,6 +18,9 @@ This repository contains an implementation of a Go application following Clean A
     │   │   └── server.go
     │   └── mysql
     │       ├── db.go
+    │       ├── dbmodels
+    │       │   ├── base.go
+    │       │   └── product.go
     │       └── repositories
     │           ├── product.go
     │           └── user.go
